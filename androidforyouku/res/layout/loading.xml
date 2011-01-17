@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/programe_list_item"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:background="@drawable/whole_bg">
+
+
+
+	<ImageView android:id="@+id/logo1" android:src="@drawable/youkulogo"
+		android:layout_alignParentLeft="true" android:layout_height="50px"
+		android:layout_width="wrap_content" android:layout_marginTop="10dip"
+		android:layout_marginLeft="2dip" android:layout_marginRight="2dip" />
+	<TextView android:layout_below="@id/logo1" android:id="@+id/text"
+		android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+
+		android:layout_width="fill_parent" android:layout_marginTop="10dip"
+		android:layout_marginLeft="2dip" android:layout_marginRight="2dip"
+		android:text="目前支持的是视频源有：
+	" />
+
+	<Button android:id="@+id/btn_youku"
+		android:layout_alignParentRight="true" android:layout_below="@id/text"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/timepicker_selector_bg"
+		android:layout_marginTop="5dip" android:textColor="#fff"
+		android:text="优酷" />
+	<ImageView android:id="@+id/youkulogo" android:background="@drawable/youkulogo"
+		android:layout_below="@id/text" android:layout_toLeftOf="@id/btn_youku"
+		android:layout_alignTop="@id/btn_youku"
+		android:layout_alignParentLeft="true" android:layout_height="40px"
+		android:layout_width="wrap_content" android:layout_marginLeft="2dip" />
+	<Button android:id="@+id/btn_tudou" android:layout_below="@id/btn_youku"
+		android:layout_alignParentRight="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:background="@drawable/timepicker_selector_bg"
+		android:textColor="#fff" android:text="土豆" android:layout_marginTop="5dip" />
+
+	<ImageView android:id="@+id/tudoulogo"
+		android:layout_alignTop="@id/btn_tudou" android:layout_toLeftOf="@id/btn_tudou"
+		android:background="@drawable/tudoulogo" android:layout_alignParentLeft="true"
+		android:layout_height="40px" android:layout_width="wrap_content"
+		android:layout_marginLeft="2dip" android:layout_marginRight="2dip" />
+	<Button android:id="@+id/btn_ku6" android:layout_below="@id/btn_tudou"
+		android:layout_alignParentRight="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:background="@drawable/timepicker_selector_bg"
+		android:textColor="#fff" android:text="酷6" android:layout_marginTop="5dip" />
+	<ImageView android:id="@+id/ku6logo" android:layout_alignTop="@id/btn_ku6"
+		android:layout_toLeftOf="@id/btn_tudou" android:layout_below="@id/tudoulogo"
+		android:background="@drawable/ku6logo" android:layout_alignParentLeft="true"
+		android:layout_height="40px" android:layout_width="wrap_content"
+		android:layout_marginLeft="2dip" android:layout_marginRight="2dip" />
+<!-- 不设置height会被拉大 -->
+</RelativeLayout>
+

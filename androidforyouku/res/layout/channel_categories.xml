@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/gallery_bkg"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<group.jinjie.qq.view.CustomGallery android:id="@+id/channel_category"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:spacing="7dp" android:paddingBottom="20dp"
+			android:background="@drawable/channel_categories_bg"/>
+
+	</LinearLayout>
+
+	<ListView android:id="@+id/item_list" 
+	android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:background="@color/white"
+		android:cacheColorHint="#00000000"
+		android:listSelector="@drawable/item_selector_bg" 
+		android:layout_below="@+id/gallery_bkg">
+		
+		
+		<!--  android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical"
+    	android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+    	android:scrollbarStyle="insideOverlay"
+    	-->
+		
+	</ListView>
+
+</RelativeLayout>
