@@ -3,11 +3,11 @@ package group.jinjie.qq.model;
 import group.jinjie.qq.util.ConstantsUtility;
 
 public abstract class YouKuUrlFactory implements IUrlFactory {
-    public  String mPidStr = "pid=72dcbabf24935d13"; 
-    public  String mPzStr = "pz=10";
-    public  String mRtStr = "rt=1";
-    public  String mFStr = "f=7";
-    public  String mLenStr = "len=120";
+    public static final String mPidStr = "pid=72dcbabf24935d13"; 
+    public static final String mPzStr = "pz=10";
+    public static final String mRtStr = "rt=1";
+    public static final String mFStr = "f=7";
+    public static final String mLenStr = "len=120";
     
     public abstract String newUrlInstance();
     
