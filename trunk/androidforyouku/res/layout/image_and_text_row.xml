@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    	android:id="@+id/programe_list_item"   
+    	android:layout_width="fill_parent"   
+    	xmlns:android="http://schemas.android.com/apk/res/android"   
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center" 
+    	android:padding="5dip" 
+    	android:paddingBottom="5dip" android:paddingTop="5dip"
+    	android:background="@drawable/list_item_bg"
+    	> 
+
+		<!--  <Button    
+    		android:layout_alignParentRight="true"  
+    		android:layout_width="wrap_content"   
+    		android:layout_height="fill_parent"
+    		android:layout_gravity="center"     
+    		android:id="@+id/ItemRecording"  
+    		android:background ="@drawable/record_bg"
+    		android:textOn=""
+    		android:textOff=""
+    		android:focusable="false"/>   -->
+    		
+    	<ImageView android:id="@+id/item_icon"
+    	android:layout_alignParentLeft="true" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"   
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:gravity="center" 
+        />
+        
+		<TextView  
+    		android:layout_height="wrap_content"   
+    		android:layout_width="wrap_content"  
+    		android:textSize="15sp"        
+    		android:paddingRight="2dip"
+    		android:paddingLeft="10dip"
+    		android:id="@+id/item_title"  
+			android:layout_toRightOf="@+id/item_icon" 
+			android:layout_marginLeft="5dip" 
+			android:textColor="@color/item_title_color"
+			android:ellipsize="end"
+			/>
+		<TextView  
+    		android:layout_height="wrap_content"   
+    		android:layout_width="wrap_content"  
+    		android:textSize="13sp"        
+    		android:paddingRight="2dip"
+    		android:paddingLeft="10dip"
+    		android:id="@+id/item_pubdate"  
+			android:layout_toRightOf="@+id/item_icon" 
+			android:layout_marginLeft="5dip" 
+			android:layout_below="@id/item_title"
+			android:textColor="@color/item_title_color"
+			android:ellipsize="end"
+			/>
+			
+			<TextView  
+    		android:layout_height="wrap_content"   
+    		android:layout_width="wrap_content"  
+    		android:textSize="13sp"        
+    		android:paddingRight="2dip"
+    		android:paddingLeft="40dip"
+    		android:id="@+id/item_viewed_times"  
+			android:layout_toRightOf="@+id/item_pubdate" 
+			android:layout_marginRight="5dip" 
+			android:layout_below="@id/item_title"
+			android:textColor="@color/item_title_color"
+			android:ellipsize="end"
+			/>
+			<!--  android:layout_toLeftOf="@+id/ItemRecording" -->
+		
+		<!-- <ImageView   
+    		android:layout_width="wrap_content"   
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center"  
+			android:layout_toRightOf="@+id/ItemName"
+    		android:id="@+id/ItemImagePopular" 
+    		android:visibility="gone" 
+    		android:layout_centerVertical="true"
+    		android:gravity="center" 
+    		/>    -->
+</RelativeLayout>
+

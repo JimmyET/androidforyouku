@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, LoadingActivity!</string>
+	<string name="app_name">My friend</string>
+	<string name="hot">Hot</string>
+	<string name="channel">Channel</string>
+	<string name="favorite">Favorite</string>
+	<string name="upload">Upload</string>
+	<string name="about">About</string>
+	<string name="timepicker_dialog_title">Hot Types：</string>
+	<string name="buffered_string">Loading %s %%"</string>
+	<string name="channel_base_url">http://go.youku.com/openapi-common/</string>
+	<string name="text_loading">Loading...</string>
+	<string name="channel_item_time_duration">Duration: </string>
+	<string name="channel_item_time_pubday">day before</string>
+    <string name="channel_item_time_pubmonth">month before</string>
+    <string name="channel_item_time_pubyear">year before</string>
+	<string name="channel_item_viewed_times">times viewed</string>
+	
+</resources>

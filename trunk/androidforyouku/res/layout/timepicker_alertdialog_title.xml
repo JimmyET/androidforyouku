@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/tab_selected_bg">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="45dp" 
+		android:text="@string/timepicker_dialog_title"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_weight="5.0" 
+		android:textSize = "23sp"
+		android:textColor = "#ffffff"/>
+</LinearLayout>

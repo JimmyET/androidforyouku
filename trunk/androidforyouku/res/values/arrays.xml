@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="channel_tags">
+		<item>status</item>
+		<item>total</item>
+		<item>pg</item>
+		<item>pn</item>
+	</string-array>
+
+	<string-array name="item_tags">
+	    <item>vid</item>
+		<item>link</item>
+		<item>linkmp4</item>
+		<item>title</item>
+		<item>img</item>
+		<item>duration</item>
+		<item>pv</item>
+		<item>desc</item>
+		<item>totalcomment</item>
+		<item>user</item>
+		<item>up</item>
+		<item>down</item>
+		<item>pubdate</item>
+	</string-array>
+	<!-- The url example of YouKu video category:
+	http://go.youku.com/openapi-common/listChannelVideos?pid=72dcbabf24935d13&cid=92&pz=10&rt=1&f=7&len=120&pg=1
+	
+	After my testing the youku category url in the browser, I got results as fellow: 
+	cid
+	99    game(游戏)       @
+    98    sport(体育)      @
+    97    news(资讯) 
+    96    news(资讯) 
+    95    music(音乐)      @
+    94    funny(搞笑)      @
+    93    news(资讯)   
+    92    original(原创)   @
+    91    news(资讯)       @
+    other news(资讯)    
+    So I choose 91,92,94, 95, 98,99 and ignore some duplicated ones.
+	 -->
+	<string-array name="cid_tags">
+		<item>91</item>
+		<item>92</item>
+		<item>94</item>
+		<item>95</item>
+		<item>98</item>
+		<item>99</item>
+	</string-array>
+
+    <item name="vid" type="id"></item>
+	<item name="imageLink" type="id"></item>
+	<item name="mediaLink" type="id"></item>
+	<item name="button_position" type="id"></item>
+
+</resources>

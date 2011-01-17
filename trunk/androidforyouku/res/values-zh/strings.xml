@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">友我</string>
+    <string name="hot">热点</string>
+    <string name="channel">频道</string>
+    <string name="favorite">收藏</string>
+    <string name="upload">上传</string>
+    <string name="about">关于</string>
+    <string name="timepicker_dialog_title">热点类型：</string>
+    <string name="buffered_string">下载  %s %%"</string>
+    <string name="text_loading">下载中...</string>
+    <string name="channel_item_time_duration">时长: </string>
+    <string name="channel_item_time_pubday">天前</string>
+    <string name="channel_item_time_pubmonth">月前</string>
+    <string name="channel_item_time_pubyear">年前</string>
+    <string name="channel_item_viewed_times">次观看</string>
+</resources>
