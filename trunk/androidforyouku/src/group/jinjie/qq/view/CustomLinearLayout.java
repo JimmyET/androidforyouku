@@ -55,7 +55,7 @@ public class CustomLinearLayout extends LinearLayout{
             return;
         
         mImageViewCount = i;
-        //init();
+        init();
     }
     
     public void updateImageViewPosition(int p){
