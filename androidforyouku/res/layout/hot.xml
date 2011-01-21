@@ -27,7 +27,7 @@
 					android:layout_alignParentLeft="true"></ImageView>
 
 				<TextView android:layout_height="wrap_content"
-					android:layout_width="wrap_content" android:text="aa"
+					android:layout_width="wrap_content" android:text="@string/titile_top"
 					android:layout_alignParentLeft="true" android:paddingTop="25dp"
 					android:paddingLeft="15dp" android:textSize="20dp"
 					android:textColor="@color/white"></TextView>
@@ -39,16 +39,16 @@
 
 			</RelativeLayout>
 
-			<HorizontalScrollView android:id="@+id/progscroll"
+			<HorizontalScrollView android:id="@+id/top_scrolling_layout"
 				android:scrollbars="none" android:layout_centerHorizontal="true"
 				android:layout_width="fill_parent" android:layout_height="wrap_content">
-				<LinearLayout android:id="@+id/progcontainer"
+				<LinearLayout android:id="@+id/top_container"
 					android:orientation="horizontal" android:layout_width="fill_parent"
 					android:layout_height="wrap_content" android:layout_centerInParent="true" />
 			</HorizontalScrollView>
 
 			<group.jinjie.qq.view.CustomLinearLayout
-				android:id="@+id/progIndex" android:layout_width="fill_parent"
+				android:id="@+id/top_scrolling_balls" android:layout_width="fill_parent"
 				android:layout_height="wrap_content" android:paddingTop="5dp" />
 
 		</LinearLayout>
@@ -71,7 +71,7 @@
 					android:layout_alignParentLeft="true"></ImageView>
 
 				<TextView android:layout_height="wrap_content"
-					android:layout_width="wrap_content" android:text="bb"
+					android:layout_width="wrap_content" android:text="@string/titile_middle"
 					android:layout_alignParentLeft="true" android:paddingTop="25dp"
 					android:paddingLeft="15dp" android:textSize="20dp"
 					android:textColor="@color/white"></TextView>
@@ -115,7 +115,7 @@
                     android:layout_alignParentLeft="true"></ImageView>
 
                 <TextView android:layout_height="wrap_content"
-                    android:layout_width="wrap_content" android:text="bb"
+                    android:layout_width="wrap_content" android:text="@string/titile_bottom"
                     android:layout_alignParentLeft="true" android:paddingTop="25dp"
                     android:paddingLeft="15dp" android:textSize="20dp"
                     android:textColor="@color/white"></TextView>

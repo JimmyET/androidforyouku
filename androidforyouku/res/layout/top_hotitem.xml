@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="175dp"
+	android:orientation="vertical" android:background="@drawable/viihdetoday_program_lift_bg">
+
+	<RelativeLayout android:id="@+id/td_recordpanel" android:layout_width="fill_parent"
+		android:layout_height="198dp" android:layout_marginTop="4dp"
+		android:layout_marginBottom="13dp" android:layout_marginLeft="22dp"
+		android:layout_marginRight="22dp">
+
+		<TextView android:id="@+id/td_recordtime"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#ff004980" android:paddingLeft="5dp"
+			android:paddingRight="5dp" android:paddingTop="10dp" android:textSize="12dp"></TextView>
+
+		<TextView android:id="@+id/td_recordchannel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#ff004980" android:paddingLeft="15dp"
+			android:paddingTop="10dp" android:textSize="12dp"
+			android:layout_toRightOf="@id/td_recordtime"></TextView>
+
+		<TextView android:id="@+id/td_recordname"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:paddingLeft="5dp" android:paddingRight="5dp"
+			android:textColor="#ff004980" android:textSize="18dp"
+			android:layout_below="@id/td_recordtime"></TextView>
+
+		<TextView android:id="@+id/td_recorddes"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#ff004980" android:paddingTop="5dp"
+			android:paddingLeft="5dp" android:paddingRight="5dp"
+			android:paddingBottom="5dp" android:textSize="12dp"
+			android:layout_below="@id/td_recordname"></TextView>
+
+	</RelativeLayout>
+</LinearLayout>
+
