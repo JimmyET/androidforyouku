@@ -16,5 +16,8 @@
     <string name="channel_item_time_pubmonth">month before</string>
     <string name="channel_item_time_pubyear">year before</string>
 	<string name="channel_item_viewed_times">times viewed</string>
+	<string name="titile_top">Recommend: </string>
+    <string name="titile_middle">Viewed Most: </string>
+    <string name="titile_bottom">Commented Most:</string>
 	
 </resources>
