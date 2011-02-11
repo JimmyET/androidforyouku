@@ -3,6 +3,7 @@ package group.jinjie.qq.net;
 import framework.parser.rss.Item;
 import framework.parser.rss.Rss;
 import group.jinjie.qq.ChannelActivity;
+import group.jinjie.qq.HotActivity;
 import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
@@ -31,7 +32,7 @@ public class RssDownloaderThread extends Thread {
          */
         //while (!Thread.interrupted()) {
             IRssDownloader downloader = new RssDownloader(mContext,
-                    ChannelActivity.mChannelTags, ChannelActivity.mItemTags);
+                    HotActivity.mChannelTags, HotActivity.mItemTags);
             downloader.downloadRssContent(mUrl);
 
             Rss tempRssContent = (Rss) downloader.getRssContent();
