@@ -38,6 +38,7 @@ public class SaxHandler extends DefaultHandler {
     @Override
     public void endElement(String namespaceURI, String localName, String qName)
             throws SAXException {
+        Log.d("AAA", localName + " : " );
         Log.d("AAA", "size :" +String.valueOf(channelTags.size()));
         for (int i = 0; i < channelTags.size(); i++) {
             if(isParsingChannel && !isParsingItem) {
@@ -46,6 +47,7 @@ public class SaxHandler extends DefaultHandler {
                 if (localName.equalsIgnoreCase(channelTags.get(i))) {
                     Log.d("AAA", localName + " @ " + this.text.toString().trim());
                     channel.addValue(this.text.toString().trim());
+                    Log.d("AAA", this.text.toString().trim() + " #### " );
                 }
             }
         }

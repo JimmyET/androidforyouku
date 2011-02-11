@@ -27,7 +27,6 @@ public class HorizontalScrollLayout extends HorizontalScrollView {
 
         mGestureDetector = new GestureDetector(new MyGestureDetector());
         setOnTouchListener(new View.OnTouchListener() {
-            @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (mGestureDetector.onTouchEvent(event)) {
                     return true;

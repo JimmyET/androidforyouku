@@ -14,7 +14,7 @@
     <string name="channel_item_time_pubmonth">月前</string>
     <string name="channel_item_time_pubyear">年前</string>
     <string name="channel_item_viewed_times">次观看</string>
-    <string name="titile_top">强力推荐</string>
-    <string name="titile_middle">观看最多</string>
-    <string name="titile_bottom">评论最多</string>
+    <string name="titile_top">强力推荐：</string>
+    <string name="titile_middle">最多观看：</string>
+    <string name="titile_bottom">最多评论：</string>
 </resources>
