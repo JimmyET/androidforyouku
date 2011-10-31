@@ -19,14 +19,15 @@
 		android:layout_height="wrap_content" 
 		android:background="@color/white"
 		android:cacheColorHint="#00000000"
+        android:layoutAnimation="@anim/listitem_animation"
 		android:listSelector="@drawable/item_selector_bg" 
 		android:layout_below="@+id/gallery_bkg">
-		
 		
 		<!--  android:scrollbarTrackVertical="@drawable/scrollbar_handle_vertical"
     	android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
     	android:scrollbarStyle="insideOverlay"
     	-->
+        
 		
 	</ListView>
 

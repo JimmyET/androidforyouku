@@ -70,11 +70,11 @@ public class ChannelEpisodeActivity extends Activity {
 
             case RSS_DOWNLOAD_COMPLETED:
                 Log.d("BBB", "111");
-                mHandler.removeMessages(RSS_DOWNLOAD_COMPLETED);
-                mChannelItemAdapter = new ChannelItemAdapter(
-                        ChannelEpisodeActivity.this, relatedVideoList,
-                        rssDownloaderThread.getRssContent());
-                relatedVideoList.setAdapter(mChannelItemAdapter);
+//                mHandler.removeMessages(RSS_DOWNLOAD_COMPLETED);
+//                mChannelItemAdapter = new ChannelItemAdapter(
+//                        ChannelEpisodeActivity.this, relatedVideoList,
+//                        rssDownloaderThread.getRssContent());
+//                relatedVideoList.setAdapter(mChannelItemAdapter);
                 break;
             }
 
@@ -165,14 +165,14 @@ public class ChannelEpisodeActivity extends Activity {
         urlFactory = new YouKuRelatedUrlFactory(vid);
         String rssUrl = urlFactory.newUrlInstance();
 
-        rssDownloaderThread = new RssDownloaderThread(this, mRssContent,
+        rssDownloaderThread = new RssDownloaderThread(this,
                 rssUrl, mHandler, RSS_DOWNLOAD_COMPLETED);
         rssDownloaderThread.start();
 
         final ImageView imageView = (ImageView) this
                 .findViewById(R.id.episode_image);
         //Button pImageView = (Button) this.findViewById(R.id.play_image);
-        //pImageView.setText("¸ßÇå");
+        //pImageView.setText("ï¿½ï¿½ï¿½ï¿½");
 
         Bitmap mBitmap = ImageDownloader.loadImage(this, imageLink, 0, 0,
                 new ImageDownloaderCallback() {

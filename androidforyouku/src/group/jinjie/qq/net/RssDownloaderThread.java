@@ -14,12 +14,10 @@ public class RssDownloaderThread extends Thread {
     private int msg;
     private Context mContext;
     private Handler mHandler;
-    private Rss mRssContent;
 
-    public RssDownloaderThread(Context context, Rss preRssContent, String url,
+    public RssDownloaderThread(Context context, String url,
             Handler handler, int message) {
         this.mContext = context;
-        this.mRssContent = preRssContent;
         this.mUrl = url;
         this.mHandler = handler;
         this.msg = message;
@@ -46,26 +44,11 @@ public class RssDownloaderThread extends Thread {
             
             Log.d(TAG, "46   line!!!");
 
-            /**
-             * Check rss contents, if the value is null assign the new value,
-             * otherwise add the new items in the previous rss contents.
-             */
-            if (mRssContent != null && !mRssContent.getChannels().isEmpty()
-                    && !mRssContent.getChannels().get(0).getItems().isEmpty()) {
-                for (Item tempItem : tempRssContent.getChannels().get(0)
-                        .getItems()) {
-                    mRssContent.getChannels().get(0).addItem(tempItem);
-                }
-            } else  mRssContent = tempRssContent;
-
             Log.d(TAG, "60   line!!!");
-            mHandler.sendEmptyMessage(msg);
+           // mHandler.sendEmptyMessage(msg);
+            mHandler.obtainMessage(msg, tempRssContent).sendToTarget();
             Log.d(TAG, "62   line!!!");
             //this.interrupt();
         //}
-    }
-    
-    public Rss getRssContent() {
-        return mRssContent;
     }
 }
