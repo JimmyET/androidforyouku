@@ -81,7 +81,7 @@ public class HotActivity extends Activity {
             switch (msg.what) {
                 case TOP_RSS_DOWNLOAD_COMPLETED:
                     mUiHandler.removeMessages(TOP_RSS_DOWNLOAD_COMPLETED);
-                    mTopRss = mTopThread.getRssContent();
+                   mTopRss = (Rss) msg.obj;
 
                     initTopScrollLayout();
             }
@@ -119,7 +119,7 @@ public class HotActivity extends Activity {
         
         Log.d(TAG, rssUrl);
 
-        mTopThread = new RssDownloaderThread(this, mTopRss, rssUrl, mUiHandler,
+        mTopThread = new RssDownloaderThread(this, rssUrl, mUiHandler,
                 TOP_RSS_DOWNLOAD_COMPLETED);
         mTopThread.start();
     }
