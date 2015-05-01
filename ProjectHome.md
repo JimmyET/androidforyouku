@@ -1,0 +1,1 @@
+supports youku, tudou and ku6;
